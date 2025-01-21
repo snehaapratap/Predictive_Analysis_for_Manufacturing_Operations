@@ -1,8 +1,10 @@
 import pandas as pd
 import numpy as np
 
+# Generate synthetic data for Machine Downtime prediction
 np.random.seed(42)
 
+# Number of samples
 n = 500
 
 data = {
@@ -14,4 +16,5 @@ data = {
 
 df = pd.DataFrame(data)
 
+# Save as CSV
 df.to_csv('synthetic_manufacturing_data.csv', index=False)
